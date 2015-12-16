@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
+		FBD740591C21E4C500EA9954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740581C21E4C500EA9954 /* ViewController.swift */; };
+		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
+		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
+		FBD740611C21E4C500EA9954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */; };
+		FBD7406C1C21E4C500EA9954 /* League_Fixture_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7406B1C21E4C500EA9954 /* League_Fixture_GeneratorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD740681C21E4C500EA9954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD7404B1C21E4C500EA9954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD740521C21E4C500EA9954;
+			remoteInfo = "League Fixture Generator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBD740581C21E4C500EA9954 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBD7405D1C21E4C500EA9954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD740601C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBD740621C21E4C500EA9954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD740671C21E4C500EA9954 /* League Fixture GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "League Fixture GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD7406B1C21E4C500EA9954 /* League_Fixture_GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League_Fixture_GeneratorTests.swift; sourceTree = "<group>"; };
+		FBD7406D1C21E4C500EA9954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD740501C21E4C500EA9954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD740641C21E4C500EA9954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD7404A1C21E4C500EA9954 = {
+			isa = PBXGroup;
+			children = (
+				FBD740551C21E4C500EA9954 /* League Fixture Generator */,
+				FBD7406A1C21E4C500EA9954 /* League Fixture GeneratorTests */,
+				FBD740541C21E4C500EA9954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD740541C21E4C500EA9954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD740531C21E4C500EA9954 /* League Fixture Generator.app */,
+				FBD740671C21E4C500EA9954 /* League Fixture GeneratorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD740551C21E4C500EA9954 /* League Fixture Generator */ = {
+			isa = PBXGroup;
+			children = (
+				FBD740561C21E4C500EA9954 /* AppDelegate.swift */,
+				FBD740581C21E4C500EA9954 /* ViewController.swift */,
+				FBD7405A1C21E4C500EA9954 /* Main.storyboard */,
+				FBD7405D1C21E4C500EA9954 /* Assets.xcassets */,
+				FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */,
+				FBD740621C21E4C500EA9954 /* Info.plist */,
+			);
+			path = "League Fixture Generator";
+			sourceTree = "<group>";
+		};
+		FBD7406A1C21E4C500EA9954 /* League Fixture GeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7406B1C21E4C500EA9954 /* League_Fixture_GeneratorTests.swift */,
+				FBD7406D1C21E4C500EA9954 /* Info.plist */,
+			);
+			path = "League Fixture GeneratorTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD740521C21E4C500EA9954 /* League Fixture Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD740701C21E4C500EA9954 /* Build configuration list for PBXNativeTarget "League Fixture Generator" */;
+			buildPhases = (
+				FBD7404F1C21E4C500EA9954 /* Sources */,
+				FBD740501C21E4C500EA9954 /* Frameworks */,
+				FBD740511C21E4C500EA9954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "League Fixture Generator";
+			productName = "League Fixture Generator";
+			productReference = FBD740531C21E4C500EA9954 /* League Fixture Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBD740661C21E4C500EA9954 /* League Fixture GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD740731C21E4C500EA9954 /* Build configuration list for PBXNativeTarget "League Fixture GeneratorTests" */;
+			buildPhases = (
+				FBD740631C21E4C500EA9954 /* Sources */,
+				FBD740641C21E4C500EA9954 /* Frameworks */,
+				FBD740651C21E4C500EA9954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD740691C21E4C500EA9954 /* PBXTargetDependency */,
+			);
+			name = "League Fixture GeneratorTests";
+			productName = "League Fixture GeneratorTests";
+			productReference = FBD740671C21E4C500EA9954 /* League Fixture GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD7404B1C21E4C500EA9954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jonny Cameron";
+				TargetAttributes = {
+					FBD740521C21E4C500EA9954 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FBD740661C21E4C500EA9954 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FBD740521C21E4C500EA9954;
+					};
+				};
+			};
+			buildConfigurationList = FBD7404E1C21E4C500EA9954 /* Build configuration list for PBXProject "League Fixture Generator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD7404A1C21E4C500EA9954;
+			productRefGroup = FBD740541C21E4C500EA9954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD740521C21E4C500EA9954 /* League Fixture Generator */,
+				FBD740661C21E4C500EA9954 /* League Fixture GeneratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD740511C21E4C500EA9954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD740611C21E4C500EA9954 /* LaunchScreen.storyboard in Resources */,
+				FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */,
+				FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD740651C21E4C500EA9954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD7404F1C21E4C500EA9954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD740591C21E4C500EA9954 /* ViewController.swift in Sources */,
+				FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD740631C21E4C500EA9954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD7406C1C21E4C500EA9954 /* League_Fixture_GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD740691C21E4C500EA9954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD740521C21E4C500EA9954 /* League Fixture Generator */;
+			targetProxy = FBD740681C21E4C500EA9954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBD7405A1C21E4C500EA9954 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD7405B1C21E4C500EA9954 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD740601C21E4C500EA9954 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBD7406E1C21E4C500EA9954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBD7406F1C21E4C500EA9954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD740711C21E4C500EA9954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "League Fixture Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBD740721C21E4C500EA9954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "League Fixture Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBD740741C21E4C500EA9954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "League Fixture GeneratorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/League Fixture Generator.app/League Fixture Generator";
+			};
+			name = Debug;
+		};
+		FBD740751C21E4C500EA9954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "League Fixture GeneratorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/League Fixture Generator.app/League Fixture Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD7404E1C21E4C500EA9954 /* Build configuration list for PBXProject "League Fixture Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD7406E1C21E4C500EA9954 /* Debug */,
+				FBD7406F1C21E4C500EA9954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD740701C21E4C500EA9954 /* Build configuration list for PBXNativeTarget "League Fixture Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD740711C21E4C500EA9954 /* Debug */,
+				FBD740721C21E4C500EA9954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBD740731C21E4C500EA9954 /* Build configuration list for PBXNativeTarget "League Fixture GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD740741C21E4C500EA9954 /* Debug */,
+				FBD740751C21E4C500EA9954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBD7404B1C21E4C500EA9954 /* Project object */;
+}
