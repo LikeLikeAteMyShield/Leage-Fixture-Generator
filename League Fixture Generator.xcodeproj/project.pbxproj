@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2DF0711C21ED0000F1BBE3 /* Club.swift */; };
 		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
-		FBD740591C21E4C500EA9954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740581C21E4C500EA9954 /* ViewController.swift */; };
 		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
 		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
 		FBD740611C21E4C500EA9954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */; };
@@ -26,9 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2DF0711C21ED0000F1BBE3 /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBD740581C21E4C500EA9954 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD7405D1C21E4C500EA9954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD740601C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2DF0701C21EC9A00F1BBE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB2DF0711C21ED0000F1BBE3 /* Club.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		FBD7404A1C21E4C500EA9954 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +85,8 @@
 		FBD740551C21E4C500EA9954 /* League Fixture Generator */ = {
 			isa = PBXGroup;
 			children = (
+				FB2DF0701C21EC9A00F1BBE3 /* Models */,
 				FBD740561C21E4C500EA9954 /* AppDelegate.swift */,
-				FBD740581C21E4C500EA9954 /* ViewController.swift */,
 				FBD7405A1C21E4C500EA9954 /* Main.storyboard */,
 				FBD7405D1C21E4C500EA9954 /* Assets.xcassets */,
 				FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */,
@@ -197,8 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD740591C21E4C500EA9954 /* ViewController.swift in Sources */,
 				FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */,
+				FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +335,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jonny Cameron (M55VTH3ZQ9)";
 				INFOPLIST_FILE = "League Fixture Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60d4273d-acc0-4f4b-831a-bc12bf9caf7d";
 			};
 			name = Debug;
 		};
@@ -338,10 +349,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jonny Cameron (M55VTH3ZQ9)";
 				INFOPLIST_FILE = "League Fixture Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jonnyc.League-Fixture-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60d4273d-acc0-4f4b-831a-bc12bf9caf7d";
 			};
 			name = Release;
 		};
@@ -388,6 +402,7 @@
 				FBD740721C21E4C500EA9954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBD740731C21E4C500EA9954 /* Build configuration list for PBXNativeTarget "League Fixture GeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +411,7 @@
 				FBD740751C21E4C500EA9954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
