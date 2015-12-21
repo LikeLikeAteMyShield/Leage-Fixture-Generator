@@ -14,10 +14,14 @@ public class Club {
     let hasJuniorTeam : Bool
     let hasSeniorTeam : Bool
     
-    init(name:String, hasJuniorTeam:Bool, hasSeniorTeam:Bool) {
+    init?(name:String, hasJuniorTeam:Bool, hasSeniorTeam:Bool) {
     
         self.name = name
         self.hasJuniorTeam = hasJuniorTeam
         self.hasSeniorTeam = hasSeniorTeam
+        
+        if name.isEmpty || (!hasSeniorTeam && !hasJuniorTeam) {
+            return nil
+        }
     }
 }

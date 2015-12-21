@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Non-match dates-->
         <scene sceneID="o6I-5b-nex">
             <objects>
                 <viewController id="NiP-4p-6IE" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="r2e-UA-gSY"/>
+                    <tabBarItem key="tabBarItem" title="Non-match dates" image="calendar" selectedImage="calendar-filled" id="r2e-UA-gSY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXI-tr-xLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="661"/>
+            <point key="canvasLocation" x="-556" y="1821"/>
         </scene>
-        <!--Item-->
+        <!--Generate-->
         <scene sceneID="J0P-ir-ytJ">
             <objects>
                 <viewController id="DMS-Ei-0ey" sceneMemberID="viewController">
@@ -35,32 +35,88 @@
                     <view key="view" contentMode="scaleToFill" id="SEU-G1-SSi">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="WLf-bg-SL7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Isq-vn-bUU" firstAttribute="top" secondItem="WLf-bg-SL7" secondAttribute="bottom" id="PJv-c6-jLg"/>
+                            <constraint firstItem="WLf-bg-SL7" firstAttribute="top" secondItem="SEU-G1-SSi" secondAttribute="top" id="gHx-Lf-z91"/>
+                            <constraint firstAttribute="trailing" secondItem="WLf-bg-SL7" secondAttribute="trailing" id="gZ0-Zd-rg4"/>
+                            <constraint firstItem="WLf-bg-SL7" firstAttribute="leading" secondItem="SEU-G1-SSi" secondAttribute="leading" id="iLy-F4-6Yp"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aHW-wT-z1A"/>
+                    <tabBarItem key="tabBarItem" title="Generate" image="document" selectedImage="document-filled" id="aHW-wT-z1A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf2-BC-hIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="661"/>
+            <point key="canvasLocation" x="-564" y="2965"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="xoO-XH-f0X">
+        <!--Club View Controller-->
+        <scene sceneID="OtC-ia-21V">
             <objects>
-                <viewController id="zAc-5O-3Ys" sceneMemberID="viewController">
+                <viewController id="mWM-ql-7Ly" customClass="ClubViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9hH-19-fhM"/>
-                        <viewControllerLayoutGuide type="bottom" id="9s0-iV-lKH"/>
+                        <viewControllerLayoutGuide type="top" id="mtr-ib-d7r"/>
+                        <viewControllerLayoutGuide type="bottom" id="E9q-st-o93"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="B6U-47-Bam">
+                    <view key="view" contentMode="scaleToFill" id="jC5-n9-vny">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Muf-bl-Pqx">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4f-7p-wwZ">
+                                <rect key="frame" x="137" y="295" width="494" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Club name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dq-Wz-FRd">
+                                <rect key="frame" x="137" y="266" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWP-Af-xAB">
+                                <rect key="frame" x="238" y="358" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Senior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsW-GY-RAV">
+                                <rect key="frame" x="137" y="407" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Junior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-Xg-WqT">
+                                <rect key="frame" x="137" y="363" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-9o-bu2">
+                                <rect key="frame" x="238" y="402" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E9q-st-o93" firstAttribute="top" secondItem="Muf-bl-Pqx" secondAttribute="bottom" id="A1R-pl-u1B"/>
+                            <constraint firstAttribute="trailing" secondItem="Muf-bl-Pqx" secondAttribute="trailing" id="Eoh-JZ-aYX"/>
+                            <constraint firstItem="Muf-bl-Pqx" firstAttribute="leading" secondItem="jC5-n9-vny" secondAttribute="leading" id="MUY-8L-bXG"/>
+                            <constraint firstItem="Muf-bl-Pqx" firstAttribute="top" secondItem="jC5-n9-vny" secondAttribute="top" id="vd5-dE-GhU"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="hWv-TI-MVE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="clubNameTextField" destination="m4f-7p-wwZ" id="ZEj-Rn-wRu"/>
+                        <outlet property="juniorTeamSwitch" destination="gWP-Af-xAB" id="QFZ-26-lXP"/>
+                        <outlet property="seniorTeamSwitch" destination="YaY-9o-bu2" id="Hav-am-es9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sz9-5d-oin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKl-Nj-8ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-542" y="661"/>
+            <point key="canvasLocation" x="1286" y="661"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7VJ-SQ-KhP">
@@ -73,14 +129,78 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zAc-5O-3Ys" kind="relationship" relationship="viewControllers" id="7t3-et-de3"/>
+                        <segue destination="JGq-0a-Idw" kind="relationship" relationship="viewControllers" id="7t3-et-de3"/>
                         <segue destination="NiP-4p-6IE" kind="relationship" relationship="viewControllers" id="leu-Dj-QLJ"/>
                         <segue destination="DMS-Ei-0ey" kind="relationship" relationship="viewControllers" id="zzD-7t-fBa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvb-TX-Xgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="-540"/>
+            <point key="canvasLocation" x="-2044" y="2116"/>
+        </scene>
+        <!--Clubs-->
+        <scene sceneID="XUb-SS-xU4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uY1-2w-mQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JGq-0a-Idw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Clubs" image="club" selectedImage="club-filled" id="hWv-TI-MVE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jfN-M9-VuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2xw-q8-Z4B" kind="relationship" relationship="rootViewController" id="X8U-MG-wwB"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-542" y="661"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="YDb-lh-Kdu">
+            <objects>
+                <tableViewController id="2xw-q8-Z4B" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vlY-1c-SUy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gT5-5N-CiT">
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT5-5N-CiT" id="DBF-Wg-qrT">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2xw-q8-Z4B" id="2rg-1p-Wem"/>
+                            <outlet property="delegate" destination="2xw-q8-Z4B" id="Puy-If-vY9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Jcf-UH-Qyy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="LaD-f2-s2a">
+                            <connections>
+                                <segue destination="mWM-ql-7Ly" kind="show" id="ohe-W5-jIc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMv-81-yiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="661"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1920" height="1080"/>
+        <image name="calendar" width="25" height="25"/>
+        <image name="calendar-filled" width="25" height="25"/>
+        <image name="club" width="25" height="25"/>
+        <image name="club-filled" width="25" height="25"/>
+        <image name="document" width="25" height="25"/>
+        <image name="document-filled" width="25" height="25"/>
+    </resources>
 </document>

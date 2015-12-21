@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2DF0711C21ED0000F1BBE3 /* Club.swift */; };
+		FB35C1821C271E03007D01AF /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1811C271E03007D01AF /* ClubViewController.swift */; };
 		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
 		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
 		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		FB2DF0711C21ED0000F1BBE3 /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		FB35C1811C271E03007D01AF /* ClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
 		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				FBD7405D1C21E4C500EA9954 /* Assets.xcassets */,
 				FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */,
 				FBD740621C21E4C500EA9954 /* Info.plist */,
+				FB35C1811C271E03007D01AF /* ClubViewController.swift */,
 			);
 			path = "League Fixture Generator";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */,
 				FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */,
+				FB35C1821C271E03007D01AF /* ClubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,26 +11,17 @@ import XCTest
 
 class League_Fixture_GeneratorTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    // MARK: Club tests
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    func testClubInitialisation() {
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let testClub = Club(name: "Ulster Transport", hasJuniorTeam: true, hasSeniorTeam: true)
+        XCTAssertNotNil(testClub)
+        
+        let noNameClub = Club(name: "", hasJuniorTeam: true, hasSeniorTeam: true)
+        XCTAssertNil(noNameClub, "Empty name is invalid")
+        
+        let noTeamClub = Club(name: "Ulster Transport", hasJuniorTeam: false, hasSeniorTeam: false)
+        XCTAssertNil(noTeamClub)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
