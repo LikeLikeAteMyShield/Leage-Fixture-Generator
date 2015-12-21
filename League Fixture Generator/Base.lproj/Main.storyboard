@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="-564" y="2965"/>
         </scene>
-        <!--Club View Controller-->
+        <!--New Club-->
         <scene sceneID="OtC-ia-21V">
             <objects>
                 <viewController id="mWM-ql-7Ly" customClass="ClubViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,16 +107,30 @@
                             <constraint firstItem="Muf-bl-Pqx" firstAttribute="top" secondItem="jC5-n9-vny" secondAttribute="top" id="vd5-dE-GhU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="New Club" id="MhB-Rl-s6C">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Kvd-Bn-CcO">
+                            <connections>
+                                <action selector="cancel:" destination="mWM-ql-7Ly" id="okM-SR-5jL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zn9-sO-BL4">
+                            <connections>
+                                <segue destination="Uhv-Xn-xqx" kind="unwind" unwindAction="unwindToClubList:" id="RTh-LH-tDH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="clubNameTextField" destination="m4f-7p-wwZ" id="ZEj-Rn-wRu"/>
                         <outlet property="juniorTeamSwitch" destination="gWP-Af-xAB" id="QFZ-26-lXP"/>
+                        <outlet property="saveButton" destination="zn9-sO-BL4" id="uQd-2s-H35"/>
                         <outlet property="seniorTeamSwitch" destination="YaY-9o-bu2" id="Hav-am-es9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKl-Nj-8ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Uhv-Xn-xqx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="661"/>
+            <point key="canvasLocation" x="2176" y="661"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7VJ-SQ-KhP">
@@ -157,22 +171,42 @@
             </objects>
             <point key="canvasLocation" x="-542" y="661"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Clubs-->
         <scene sceneID="YDb-lh-Kdu">
             <objects>
-                <tableViewController id="2xw-q8-Z4B" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vlY-1c-SUy">
+                <tableViewController id="2xw-q8-Z4B" customClass="ClubTableViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="vlY-1c-SUy">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gT5-5N-CiT">
-                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ClubTableViewCell" rowHeight="90" id="gT5-5N-CiT" customClass="ClubTableViewCell" customModule="League_Fixture_Generator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="768" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT5-5N-CiT" id="DBF-Wg-qrT">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-JQ-lrt">
+                                            <rect key="frame" x="8" y="21" width="532" height="47"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dts-Ex-4kX">
+                                            <rect key="frame" x="572" y="8" width="74" height="74"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-vw-e5u">
+                                            <rect key="frame" x="654" y="7" width="74" height="74"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="clubNameLabel" destination="Fl2-JQ-lrt" id="fbr-U7-gPI"/>
+                                    <outlet property="juniorImageView" destination="Dts-Ex-4kX" id="5ep-ik-2nD"/>
+                                    <outlet property="seniorImageView" destination="TXL-vw-e5u" id="YfQ-Em-tlV"/>
+                                    <segue destination="mWM-ql-7Ly" kind="show" identifier="showDetail" id="Dmz-TV-2aA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -180,10 +214,10 @@
                             <outlet property="delegate" destination="2xw-q8-Z4B" id="Puy-If-vY9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Jcf-UH-Qyy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="LaD-f2-s2a">
+                    <navigationItem key="navigationItem" title="Clubs" id="Jcf-UH-Qyy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LaD-f2-s2a">
                             <connections>
-                                <segue destination="mWM-ql-7Ly" kind="show" id="ohe-W5-jIc"/>
+                                <segue destination="7R5-dC-48n" kind="presentation" identifier="addClub" id="ohe-W5-jIc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -191,7 +225,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMv-81-yiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="661"/>
+            <point key="canvasLocation" x="477" y="661"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yfU-xM-wUm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7R5-dC-48n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zaS-vs-1zr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mWM-ql-7Ly" kind="relationship" relationship="rootViewController" id="gui-MN-qcw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHR-xJ-O2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="661"/>
         </scene>
     </scenes>
     <resources>
@@ -203,4 +255,7 @@
         <image name="document" width="25" height="25"/>
         <image name="document-filled" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dmz-TV-2aA"/>
+    </inferredMetricsTieBreakers>
 </document>
