@@ -78,6 +78,7 @@ class ClubViewController: UIViewController, UITextFieldDelegate {
             dismissViewControllerAnimated(true, completion: nil)
         } else {
             navigationController!.popViewControllerAnimated(true)
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     
