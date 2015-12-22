@@ -15,6 +15,10 @@
 		FB35C18B1C28CC0F007D01AF /* blacklistDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */; };
 		FB35C18D1C28D2D1007D01AF /* BlacklistDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C18C1C28D2D1007D01AF /* BlacklistDate.swift */; };
 		FB35C18F1C29721E007D01AF /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C18E1C29721E007D01AF /* GenerateViewController.swift */; };
+		FB35C1911C299DB4007D01AF /* FixtureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1901C299DB4007D01AF /* FixtureViewController.swift */; };
+		FB35C1931C299E55007D01AF /* amazon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB35C1921C299E55007D01AF /* amazon.pdf */; };
+		FB35C1951C29A06B007D01AF /* guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB35C1941C29A06B007D01AF /* guide.pdf */; };
+		FB35C1971C29AA34007D01AF /* DivisionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1961C29AA34007D01AF /* DivisionTableViewController.swift */; };
 		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
 		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
 		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 		FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blacklistDatePickerViewController.swift; sourceTree = "<group>"; };
 		FB35C18C1C28D2D1007D01AF /* BlacklistDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlacklistDate.swift; sourceTree = "<group>"; };
 		FB35C18E1C29721E007D01AF /* GenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
+		FB35C1901C299DB4007D01AF /* FixtureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureViewController.swift; sourceTree = "<group>"; };
+		FB35C1921C299E55007D01AF /* amazon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = amazon.pdf; path = ../../../Downloads/amazon.pdf; sourceTree = "<group>"; };
+		FB35C1941C29A06B007D01AF /* guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = guide.pdf; path = ../../../Downloads/guide.pdf; sourceTree = "<group>"; };
+		FB35C1961C29AA34007D01AF /* DivisionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionTableViewController.swift; sourceTree = "<group>"; };
 		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +96,8 @@
 				FB35C1881C28C251007D01AF /* BlacklistDateTableViewController.swift */,
 				FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */,
 				FB35C18E1C29721E007D01AF /* GenerateViewController.swift */,
+				FB35C1901C299DB4007D01AF /* FixtureViewController.swift */,
+				FB35C1961C29AA34007D01AF /* DivisionTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -116,6 +126,8 @@
 				FB2DF0701C21EC9A00F1BBE3 /* Models */,
 				FBD740561C21E4C500EA9954 /* AppDelegate.swift */,
 				FBD7405A1C21E4C500EA9954 /* Main.storyboard */,
+				FB35C1941C29A06B007D01AF /* guide.pdf */,
+				FB35C1921C299E55007D01AF /* amazon.pdf */,
 				FBD7405D1C21E4C500EA9954 /* Assets.xcassets */,
 				FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */,
 				FBD740621C21E4C500EA9954 /* Info.plist */,
@@ -214,6 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB35C1931C299E55007D01AF /* amazon.pdf in Resources */,
+				FB35C1951C29A06B007D01AF /* guide.pdf in Resources */,
 				FBD740611C21E4C500EA9954 /* LaunchScreen.storyboard in Resources */,
 				FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */,
 				FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */,
@@ -236,12 +250,14 @@
 			files = (
 				FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */,
 				FB35C18F1C29721E007D01AF /* GenerateViewController.swift in Sources */,
+				FB35C1971C29AA34007D01AF /* DivisionTableViewController.swift in Sources */,
 				FB35C1861C284385007D01AF /* ClubTableViewController.swift in Sources */,
 				FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */,
 				FB35C1821C271E03007D01AF /* ClubViewController.swift in Sources */,
 				FB35C1841C283FC0007D01AF /* ClubTableViewCell.swift in Sources */,
 				FB35C18D1C28D2D1007D01AF /* BlacklistDate.swift in Sources */,
 				FB35C18B1C28CC0F007D01AF /* blacklistDatePickerViewController.swift in Sources */,
+				FB35C1911C299DB4007D01AF /* FixtureViewController.swift in Sources */,
 				FB35C1891C28C251007D01AF /* BlacklistDateTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

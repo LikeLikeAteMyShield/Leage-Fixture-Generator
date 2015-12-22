@@ -53,10 +53,14 @@ class ClubTableViewController: UITableViewController {
         
         if(club.hasJuniorTeam){
             cell.juniorImageView.image = UIImage.init(named: "junior")
+        } else {
+            cell.juniorImageView.image = nil
         }
         
         if(club.hasSeniorTeam){
             cell.seniorImageView.image = UIImage.init(named: "senior")
+        } else {
+            cell.seniorImageView.image = nil
         }
         
         cell.backgroundColor = UIColor.clearColor()
