@@ -11,6 +11,9 @@
 		FB35C1821C271E03007D01AF /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1811C271E03007D01AF /* ClubViewController.swift */; };
 		FB35C1841C283FC0007D01AF /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1831C283FC0007D01AF /* ClubTableViewCell.swift */; };
 		FB35C1861C284385007D01AF /* ClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1851C284385007D01AF /* ClubTableViewController.swift */; };
+		FB35C1891C28C251007D01AF /* BlacklistDateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1881C28C251007D01AF /* BlacklistDateTableViewController.swift */; };
+		FB35C18B1C28CC0F007D01AF /* blacklistDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */; };
+		FB35C18D1C28D2D1007D01AF /* BlacklistDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C18C1C28D2D1007D01AF /* BlacklistDate.swift */; };
 		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
 		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
 		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 		FB35C1811C271E03007D01AF /* ClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
 		FB35C1831C283FC0007D01AF /* ClubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTableViewCell.swift; sourceTree = "<group>"; };
 		FB35C1851C284385007D01AF /* ClubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTableViewController.swift; sourceTree = "<group>"; };
+		FB35C1881C28C251007D01AF /* BlacklistDateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlacklistDateTableViewController.swift; sourceTree = "<group>"; };
+		FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blacklistDatePickerViewController.swift; sourceTree = "<group>"; };
+		FB35C18C1C28D2D1007D01AF /* BlacklistDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlacklistDate.swift; sourceTree = "<group>"; };
 		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2DF0711C21ED0000F1BBE3 /* Club.swift */,
+				FB35C18C1C28D2D1007D01AF /* BlacklistDate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -76,6 +83,8 @@
 				FB35C1811C271E03007D01AF /* ClubViewController.swift */,
 				FB35C1831C283FC0007D01AF /* ClubTableViewCell.swift */,
 				FB35C1851C284385007D01AF /* ClubTableViewController.swift */,
+				FB35C1881C28C251007D01AF /* BlacklistDateTableViewController.swift */,
+				FB35C18A1C28CC0F007D01AF /* blacklistDatePickerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -227,6 +236,9 @@
 				FB2DF0721C21ED0000F1BBE3 /* Club.swift in Sources */,
 				FB35C1821C271E03007D01AF /* ClubViewController.swift in Sources */,
 				FB35C1841C283FC0007D01AF /* ClubTableViewCell.swift in Sources */,
+				FB35C18D1C28D2D1007D01AF /* BlacklistDate.swift in Sources */,
+				FB35C18B1C28CC0F007D01AF /* blacklistDatePickerViewController.swift in Sources */,
+				FB35C1891C28C251007D01AF /* BlacklistDateTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

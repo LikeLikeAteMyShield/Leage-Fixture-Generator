@@ -5,25 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Non-match dates-->
-        <scene sceneID="o6I-5b-nex">
-            <objects>
-                <viewController id="NiP-4p-6IE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="USW-zw-Y51"/>
-                        <viewControllerLayoutGuide type="bottom" id="9Ls-Z8-hWu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nBa-cb-clW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Non-match dates" image="calendar" selectedImage="calendar-filled" id="r2e-UA-gSY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kXI-tr-xLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-556" y="1821"/>
-        </scene>
         <!--Generate-->
         <scene sceneID="J0P-ir-ytJ">
             <objects>
@@ -144,7 +125,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="JGq-0a-Idw" kind="relationship" relationship="viewControllers" id="7t3-et-de3"/>
-                        <segue destination="NiP-4p-6IE" kind="relationship" relationship="viewControllers" id="leu-Dj-QLJ"/>
+                        <segue destination="6Kc-AV-8hh" kind="relationship" relationship="viewControllers" id="leu-Dj-QLJ"/>
                         <segue destination="DMS-Ei-0ey" kind="relationship" relationship="viewControllers" id="zzD-7t-fBa"/>
                     </connections>
                 </tabBarController>
@@ -184,7 +165,7 @@
                                 <rect key="frame" x="0.0" y="92" width="768" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT5-5N-CiT" id="DBF-Wg-qrT">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-JQ-lrt">
@@ -244,6 +225,119 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHR-xJ-O2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1286" y="661"/>
+        </scene>
+        <!--Non-match dates-->
+        <scene sceneID="nHy-Jb-sg2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Kc-AV-8hh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Non-match dates" image="calendar" selectedImage="calendar-filled" id="r2e-UA-gSY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zkE-jG-Wqm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EfC-zg-uUQ" kind="relationship" relationship="rootViewController" id="QAh-SS-ked"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8B-WF-55w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="1821"/>
+        </scene>
+        <!--Non-match dates-->
+        <scene sceneID="n4S-ma-rc4">
+            <objects>
+                <tableViewController id="EfC-zg-uUQ" customClass="BlacklistDateTableViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="lUN-Cq-YFv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="blacklistDateCell" textLabel="t1g-Pi-VZI" rowHeight="90" style="IBUITableViewCellStyleDefault" id="cR5-bu-AyK">
+                                <rect key="frame" x="0.0" y="92" width="768" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cR5-bu-AyK" id="qfN-cZ-69t">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t1g-Pi-VZI">
+                                            <rect key="frame" x="68" y="0.0" width="632" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EfC-zg-uUQ" id="W21-7u-xE9"/>
+                            <outlet property="delegate" destination="EfC-zg-uUQ" id="U5r-9x-bC5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Non-match dates" id="ffF-XB-3NX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ev3-Fc-AXh">
+                            <connections>
+                                <segue destination="xCa-y8-XN8" kind="popoverPresentation" popoverAnchorBarButtonItem="ev3-Fc-AXh" id="VfH-QK-cMv">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aH-x1-7ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1821"/>
+        </scene>
+        <!--Blacklist Date Picker View Controller-->
+        <scene sceneID="nFR-Cz-kcB">
+            <objects>
+                <viewController id="xCa-y8-XN8" customClass="blacklistDatePickerViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qYm-3D-E6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="il9-k7-94C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSv-MS-Xdj">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-Dw-yKY">
+                                <rect key="frame" x="-10" y="20" width="320" height="278"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-MY-VXi">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="472432682.760827">
+                                            <!--2015-12-21 23:18:02 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2A-AW-3q7">
+                                        <rect key="frame" x="133" y="236" width="55" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <segue destination="gMW-bj-iYs" kind="unwind" unwindAction="unwindToDateList:" id="3GF-HL-nHj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <connections>
+                        <outlet property="blacklistDatePicker" destination="iFw-MY-VXi" id="V1j-bz-htD"/>
+                        <outlet property="saveButton" destination="T2A-AW-3q7" id="YuO-4N-cpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMN-ta-Ri8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gMW-bj-iYs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="1781"/>
         </scene>
     </scenes>
     <resources>
