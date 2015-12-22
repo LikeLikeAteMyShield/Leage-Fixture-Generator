@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Generate-->
         <scene sceneID="J0P-ir-ytJ">
             <objects>
-                <viewController id="DMS-Ei-0ey" sceneMemberID="viewController">
+                <viewController id="DMS-Ei-0ey" customClass="GenerateViewController" customModule="League_Fixture_Generator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IFI-03-LZD"/>
                         <viewControllerLayoutGuide type="bottom" id="Isq-vn-bUU"/>
@@ -20,20 +21,42 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="WLf-bg-SL7">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f42-jc-p8k">
+                                <rect key="frame" x="656" y="846" width="92" height="92"/>
+                                <state key="normal" image="button"/>
+                            </button>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k8t-hy-tCL">
+                                <rect key="frame" x="0.0" y="317" width="768" height="342"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="472477910.47432101">
+                                    <!--2015-12-22 11:51:50 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set the start date for the league" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-4g-q7Z">
+                                <rect key="frame" x="20" y="288" width="728" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k8t-hy-tCL" firstAttribute="leading" secondItem="SEU-G1-SSi" secondAttribute="leadingMargin" constant="-20" id="2b8-TB-omU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k8t-hy-tCL" secondAttribute="trailing" constant="-20" id="HLq-qv-lka"/>
                             <constraint firstItem="Isq-vn-bUU" firstAttribute="top" secondItem="WLf-bg-SL7" secondAttribute="bottom" id="PJv-c6-jLg"/>
                             <constraint firstItem="WLf-bg-SL7" firstAttribute="top" secondItem="SEU-G1-SSi" secondAttribute="top" id="gHx-Lf-z91"/>
                             <constraint firstAttribute="trailing" secondItem="WLf-bg-SL7" secondAttribute="trailing" id="gZ0-Zd-rg4"/>
                             <constraint firstItem="WLf-bg-SL7" firstAttribute="leading" secondItem="SEU-G1-SSi" secondAttribute="leading" id="iLy-F4-6Yp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Generate" image="document" selectedImage="document-filled" id="aHW-wT-z1A"/>
+                    <navigationItem key="navigationItem" title="Generate" id="xyl-ZZ-Dpp"/>
+                    <connections>
+                        <outlet property="startDatePicker" destination="k8t-hy-tCL" id="prE-NT-StE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf2-BC-hIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564" y="2965"/>
+            <point key="canvasLocation" x="416" y="2965"/>
         </scene>
         <!--New Club-->
         <scene sceneID="OtC-ia-21V">
@@ -126,7 +149,7 @@
                     <connections>
                         <segue destination="JGq-0a-Idw" kind="relationship" relationship="viewControllers" id="7t3-et-de3"/>
                         <segue destination="6Kc-AV-8hh" kind="relationship" relationship="viewControllers" id="leu-Dj-QLJ"/>
-                        <segue destination="DMS-Ei-0ey" kind="relationship" relationship="viewControllers" id="zzD-7t-fBa"/>
+                        <segue destination="yfR-eh-AQk" kind="relationship" relationship="viewControllers" id="zzD-7t-fBa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvb-TX-Xgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,9 +362,29 @@
             </objects>
             <point key="canvasLocation" x="1290" y="1781"/>
         </scene>
+        <!--Generate-->
+        <scene sceneID="MgC-U0-dL2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yfR-eh-AQk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Generate" image="document" selectedImage="document-filled" id="aHW-wT-z1A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bO1-oN-Xuu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DMS-Ei-0ey" kind="relationship" relationship="rootViewController" id="3Qc-Rs-8kb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpb-L8-x8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="2965"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="1920" height="1080"/>
+        <image name="button" width="180" height="180"/>
         <image name="calendar" width="25" height="25"/>
         <image name="calendar-filled" width="25" height="25"/>
         <image name="club" width="25" height="25"/>
