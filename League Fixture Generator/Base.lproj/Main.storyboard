@@ -25,7 +25,7 @@
                                 <rect key="frame" x="656" y="554" width="92" height="92"/>
                                 <state key="normal" image="button"/>
                                 <connections>
-                                    <segue destination="1Tj-Zx-Qfg" kind="showDetail" action="showViewController:sender:" id="vqx-Jc-AGO"/>
+                                    <action selector="generateFixture:" destination="DMS-Ei-0ey" eventType="touchUpInside" id="Ngj-C2-14o"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Set the start date for the league" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-4g-q7Z">
@@ -58,6 +58,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="startDatePicker" destination="k8t-hy-tCL" id="prE-NT-StE"/>
+                        <segue destination="1Tj-Zx-Qfg" kind="show" identifier="moveToViewer" id="Pb0-av-fbV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf2-BC-hIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-4f-VbW">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll9-n8-oh3">
                                 <rect key="frame" x="26" y="28" width="34" height="30"/>
@@ -94,7 +95,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cJ6-SU-Gau" firstAttribute="leading" secondItem="dqh-mh-KXe" secondAttribute="leadingMargin" id="0n8-ET-zan"/>
-                            <constraint firstItem="cJ6-SU-Gau" firstAttribute="top" secondItem="Ll9-n8-oh3" secondAttribute="bottom" constant="60" id="1Xg-PU-N3J"/>
+                            <constraint firstItem="cJ6-SU-Gau" firstAttribute="top" secondItem="Ll9-n8-oh3" secondAttribute="bottom" constant="10" id="1Xg-PU-N3J"/>
                             <constraint firstItem="cJ6-SU-Gau" firstAttribute="leading" secondItem="dqh-mh-KXe" secondAttribute="leading" id="Frr-V0-iMy"/>
                             <constraint firstItem="avZ-XL-p5q" firstAttribute="top" secondItem="TdO-4f-VbW" secondAttribute="bottom" id="LPl-jA-4po"/>
                             <constraint firstItem="TdO-4f-VbW" firstAttribute="leading" secondItem="dqh-mh-KXe" secondAttribute="leading" id="VMQ-Ii-DwW"/>
@@ -529,6 +530,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Dmz-TV-2aA"/>
-        <segue reference="vIa-kB-2w0"/>
+        <segue reference="IZl-oM-7RL"/>
     </inferredMetricsTieBreakers>
 </document>

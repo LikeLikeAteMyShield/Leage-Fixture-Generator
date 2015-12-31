@@ -19,6 +19,7 @@
 		FB35C1931C299E55007D01AF /* amazon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB35C1921C299E55007D01AF /* amazon.pdf */; };
 		FB35C1951C29A06B007D01AF /* guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB35C1941C29A06B007D01AF /* guide.pdf */; };
 		FB35C1971C29AA34007D01AF /* DivisionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35C1961C29AA34007D01AF /* DivisionTableViewController.swift */; };
+		FB35C1991C2C62C1007D01AF /* COM563.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB35C1981C2C62C1007D01AF /* COM563.pdf */; };
 		FBD740571C21E4C500EA9954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD740561C21E4C500EA9954 /* AppDelegate.swift */; };
 		FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405A1C21E4C500EA9954 /* Main.storyboard */; };
 		FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7405D1C21E4C500EA9954 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		FB35C1921C299E55007D01AF /* amazon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = amazon.pdf; path = ../../../Downloads/amazon.pdf; sourceTree = "<group>"; };
 		FB35C1941C29A06B007D01AF /* guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = guide.pdf; path = ../../../Downloads/guide.pdf; sourceTree = "<group>"; };
 		FB35C1961C29AA34007D01AF /* DivisionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionTableViewController.swift; sourceTree = "<group>"; };
+		FB35C1981C2C62C1007D01AF /* COM563.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = COM563.pdf; path = ../../../Downloads/COM563.pdf; sourceTree = "<group>"; };
 		FBD740531C21E4C500EA9954 /* League Fixture Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "League Fixture Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD740561C21E4C500EA9954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD7405B1C21E4C500EA9954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				FBD7405A1C21E4C500EA9954 /* Main.storyboard */,
 				FB35C1941C29A06B007D01AF /* guide.pdf */,
 				FB35C1921C299E55007D01AF /* amazon.pdf */,
+				FB35C1981C2C62C1007D01AF /* COM563.pdf */,
 				FBD7405D1C21E4C500EA9954 /* Assets.xcassets */,
 				FBD7405F1C21E4C500EA9954 /* LaunchScreen.storyboard */,
 				FBD740621C21E4C500EA9954 /* Info.plist */,
@@ -231,6 +234,7 @@
 				FBD740611C21E4C500EA9954 /* LaunchScreen.storyboard in Resources */,
 				FBD7405E1C21E4C500EA9954 /* Assets.xcassets in Resources */,
 				FBD7405C1C21E4C500EA9954 /* Main.storyboard in Resources */,
+				FB35C1991C2C62C1007D01AF /* COM563.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

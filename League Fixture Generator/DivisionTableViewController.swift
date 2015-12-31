@@ -96,11 +96,17 @@ class DivisionTableViewController: UITableViewController {
         let fvc = segue.destinationViewController as! FixtureViewController
         
         if juniorCell === sender {
-            fvc.path = NSBundle.mainBundle().pathForResource("guide", ofType: "pdf")!
+            let filename = "helloworld.pdf"
+            
+            let path:NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+            let documentDirectory: AnyObject = path.objectAtIndex(0)
+            
+            let pdfPathWithFilename = documentDirectory.stringByAppendingPathComponent(filename)
+            fvc.path = pdfPathWithFilename
         }
         
         else if seniorCell === sender {
-            fvc.path = NSBundle.mainBundle().pathForResource("amazon", ofType: "pdf")!
+            fvc.path = NSBundle.mainBundle().pathForResource("COM563", ofType: "pdf")!
         }
     }
     
